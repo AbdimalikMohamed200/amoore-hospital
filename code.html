@@ -241,6 +241,9 @@
 </a>
 </div>
 <!-- Social Proof Badges from DataStore -->
+<a class="inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 font-semibold text-brand-blue underline underline-offset-4 hover:text-brand-navy focus-visible:outline focus-visible:outline-2" href="#location-video">
+<span aria-hidden="true">▶</span><span>Daawo video-ga goobta isbitaalka</span>
+</a>
 <div class="pt-4 border-t border-slate-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-600 text-sm">
 <div class="flex items-center gap-2">
 <div class="flex text-amber-400">
@@ -334,6 +337,23 @@
 </div>
 </section>
 <!-- END: HeroSection -->
+<section class="scroll-mt-28 border-y border-blue-100 bg-brand-light py-10 lg:py-14" id="location-video" aria-labelledby="location-video-title">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-6 lg:grid-cols-2 lg:items-center">
+<div class="space-y-4">
+<p class="text-sm font-bold uppercase tracking-wider text-brand-blue">Goobta isbitaalka</p>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy" id="location-video-title">Sidee ku imaan kartaa Amoore Hospital?</h2>
+<p class="text-slate-600 leading-relaxed">Daawo video-ga sharaxaya goobta isbitaalka ee Hodan, Taleex, Muqdisho, si aad si fudud noogu timaaddo.</p>
+<a class="inline-flex font-semibold text-brand-blue underline underline-offset-4 hover:text-brand-navy" href="#location-map">Eeg khariidadda isbitaalka</a>
+</div>
+<a class="group flex items-center gap-5 rounded-2xl bg-brand-navy p-6 sm:p-8 text-white shadow-lg transition hover:bg-brand-blue focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-brand-blue" href="https://www.facebook.com/share/v/19Wy7o1nUB/" target="_blank" rel="noopener noreferrer">
+<span aria-hidden="true" class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-red text-2xl transition-transform group-hover:scale-110">▶</span>
+<span class="space-y-2">
+<span class="block text-xl font-bold">Daawo video-ga goobta isbitaalka</span>
+<span class="block text-sm text-blue-100">Video-gu wuxuu ku furmayaa Facebook, tab cusub.</span>
+</span>
+</a>
+</div>
+</section>
 <!-- BEGIN: FastStatsSection -->
 <!-- Stats bar highlighting key metrics from the hospital -->
 <section class="bg-white border-y border-slate-200 py-8" data-purpose="hospital-stats">
@@ -1046,6 +1066,12 @@
   // Client-side Somali, English and Arabic translations.
   const languageCatalog = [];
   const addTranslation = (so, en, ar) => languageCatalog.push([so, en, ar]);
+  addTranslation(`Goobta isbitaalka`, `Hospital location`, `موقع المستشفى`);
+  addTranslation(`Sidee ku imaan kartaa Amoore Hospital?`, `How to find Amoore Hospital`, `كيف تصل إلى مستشفى أمور؟`);
+  addTranslation(`Daawo video-ga sharaxaya goobta isbitaalka ee Hodan, Taleex, Muqdisho, si aad si fudud noogu timaaddo.`, `Watch the video explaining our hospital's location in Hodan, Taleex, Mogadishu, to help plan your visit.`, `شاهد الفيديو الذي يوضح موقع المستشفى في هودان، طليح، مقديشو، لتسهيل وصولك إلينا.`);
+  addTranslation(`Daawo video-ga goobta isbitaalka`, `Watch the hospital location video`, `شاهد فيديو موقع المستشفى`);
+  addTranslation(`Eeg khariidadda isbitaalka`, `View the hospital map`, `عرض خريطة المستشفى`);
+  addTranslation(`Video-gu wuxuu ku furmayaa Facebook, tab cusub.`, `The video opens on Facebook in a new tab.`, `يفتح الفيديو على فيسبوك في علامة تبويب جديدة.`);
 
   addTranslation(`Hodan Taleex, Muqdisho, Soomaaliya`, `Hodan Taleex, Mogadishu, Somalia`, `هودان طليح، مقديشو، الصومال`);
   addTranslation(`Adeeggu Waa 24/7 Furan Yahay`, `Open 24/7`, `مفتوح على مدار الساعة`);
